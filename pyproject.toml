@@ -1,0 +1,25 @@
+[project]
+name = "ops-frontier-shcema-lib-apps"
+version = "0.0.1"
+description = "Github Apps to aggregate JSON Schemas into a repository"
+authors = [
+    {"name"="Mitsuru Nakakawaji"},
+    {"email"="mitsuru@procube.jp"}
+]
+license = {file="LICENSE"}
+readme = "README.md"
+
+dependencies = [
+    PyGithub>=.6.1
+]
+
+[project.scripts]
+aggregate-schemas = "aggregateSchemas:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project.optional-dependencies]
+dev = [
+]
